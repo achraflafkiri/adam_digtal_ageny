@@ -1,0 +1,77 @@
+@media screen and (max-width: 780px) {
+    nav.navbar .burger-icon {
+        display: block !important;
+    }
+
+    nav.navbar .navbar-nav {
+        width: 100% !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 108% !important;
+        left: 50% !important;
+        transform: translate(-50%, 0) !important;
+        background: #fff !important;
+        border-radius: 5px !important;
+        padding: 2em 0 !important;
+        display: none !important;
+        padding: 20px 40px !important;
+        border: 1px solid #cdcdcd !important;
+        gap: 1rem !important;
+    }
+
+    nav.navbar .navbar-nav.active {
+        display: flex !important;
+    }
+
+    .section-info .section-title {
+        text-align: center !important;
+    }
+
+    .section-info .desc-section {
+        text-align: center !important;
+    }
+    
+    section.hero-section .hero-title {
+        text-align: center !important;
+        font-size: 40px !important;
+    }
+
+    section.hero-section p {
+        text-align: center !important;
+    }
+
+    .button {
+        margin: auto;
+    }
+
+    .services .card .card-body ul.features {
+        margin-top: 4rem !important;
+    }
+
+    .about .col-md-6:last-child, .pricing .row .rectangle, .banner-count, .hero-image {
+        display: none;
+    }
+
+    .about-desc {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 762px) {
+    .pricing .row .rectangle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1195px) {
+    .services .card .card-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner-count {
+        display: none;
+    }
+}
