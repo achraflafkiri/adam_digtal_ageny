@@ -1,4 +1,4 @@
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1199px) {
     nav.navbar .burger-icon {
         display: block !important;
     }
@@ -30,7 +30,7 @@
     .section-info .desc-section {
         text-align: center !important;
     }
-    
+
     section.hero-section .hero-title {
         text-align: center !important;
         font-size: 40px !important;
@@ -48,9 +48,7 @@
         margin-top: 4rem !important;
     }
 
-    .about .col-md-6:last-child, .pricing .row .rectangle, .banner-count, .hero-image {
-        display: none;
-    }
+
 
     .about-desc {
         text-align: center;
@@ -58,20 +56,33 @@
 
 }
 
-@media screen and (max-width: 762px) {
+/* @media screen and (max) { */
+
+/* } */
+
+@media screen and (max-width: 1199px) {
     .pricing .row .rectangle {
         display: none;
     }
 }
 
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 999px) {
     .services .card .card-img {
         display: none;
     }
 }
 
+@media screen and (max-width: 764px) {
+    .services .card .card-img {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 800px) {
-    .banner-count {
+
+    .banner-count,
+    .hero-image,
+    #about figure {
         display: none;
     }
 }

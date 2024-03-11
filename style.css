@@ -1,9 +1,12 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
   border: none;
   outline: none;
+  transition: all 0.3s linear;
 }
 
 a {
@@ -137,6 +140,19 @@ header nav.navbar .navbar-nav {
 }
 header nav.navbar .navbar-nav .nav-item {
   font-size: 18px;
+  position: relative;
+}
+header nav.navbar .navbar-nav .nav-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+}
+header nav.navbar .navbar-nav .nav-item:hover::before {
+  width: 100%;
 }
 header nav.navbar .navbar-nav .nav-item.drop-down {
   position: relative;
@@ -147,14 +163,15 @@ header nav.navbar .navbar-nav .nav-item.drop-down .drop-down-menu {
   top: 125px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 135px;
-  height: 150px;
+  width: 221px;
+  height: 129px;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   z-index: 9999;
+  padding: 0 16px;
 }
 header nav.navbar .navbar-nav .nav-item.drop-down .drop-down-menu.hidden {
   display: none;
