@@ -31,18 +31,7 @@
         text-align: center !important;
     }
 
-    section.hero-section .hero-title {
-        text-align: center !important;
-        font-size: 40px !important;
-    }
 
-    section.hero-section p {
-        text-align: center !important;
-    }
-
-    .button {
-        margin: auto;
-    }
 
     .services .card .card-body ul.features {
         margin-top: 4rem !important;
@@ -55,6 +44,7 @@
     }
 
 }
+
 
 /* @media screen and (max) { */
 
@@ -70,19 +60,41 @@
     .services .card .card-img {
         display: none;
     }
+
+    section.hero-section .hero-title {
+        font-size: 35px !important;
+    }
 }
 
 @media screen and (max-width: 764px) {
     .services .card .card-img {
         display: block;
     }
+
+    section.hero-section .hero-title {
+        text-align: center !important;
+        font-size: 1px !important;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
 
     .banner-count,
     .hero-image,
     #about figure {
         display: none;
+    }
+
+    section.hero-section .hero-title {
+        text-align: center !important;
+        font-size: 35px !important;
+    }
+
+    section.hero-section p {
+        text-align: center !important;
+    }
+
+    .button {
+        margin: auto;
     }
 }
